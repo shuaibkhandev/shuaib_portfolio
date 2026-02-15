@@ -147,7 +147,7 @@ export default function About() {
                   </div>
                   
                   <div className="flex items-center gap-2 text-sm text-slate-500 mb-4">
-                     <MapPin size={14} /> {job.location}
+                     <MapPin size={14} className="text-brand-blue" /> {job.location}
                   </div>
                   
                   <p className="text-slate-600 dark:text-slate-400 mb-4 text-sm leading-relaxed">
@@ -199,7 +199,7 @@ export default function About() {
                   </div>
                   
                   <div className="flex items-center gap-2 text-sm text-slate-500 mt-4">
-                     <MapPin size={14} /> {edu.location}
+                     <MapPin size={14} className="text-brand-red" /> {edu.location}
                   </div>
                 </div>
               ))}

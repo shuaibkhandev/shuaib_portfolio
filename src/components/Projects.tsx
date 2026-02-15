@@ -63,10 +63,6 @@ export default function Projects() {
             >
               {/* Minimal Image Placeholder */}
               <div className="aspect-video bg-slate-100 dark:bg-slate-800 w-full relative group-hover:bg-slate-200 dark:group-hover:bg-slate-700 transition-colors flex items-center justify-center overflow-hidden">
-                 {/* 
-                    If images are available in the future, uncomment next line:
-                    <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
-                 */}
                  <span className="text-slate-400 font-mono text-sm px-4 text-center">{project.title} Preview</span>
                  
                  {/* Live Site Overlay */}
@@ -79,7 +75,11 @@ export default function Projects() {
 
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-brand-blue transition-colors">
+                    <h3 className={`text-xl font-bold text-slate-900 dark:text-white transition-colors ${
+                        index === 0 ? "group-hover:text-brand-blue" : 
+                        index === 1 ? "group-hover:text-brand-red" : 
+                        "group-hover:text-brand-yellow"
+                    }`}>
                     {project.title}
                     </h3>
                     <div className="flex gap-3">
