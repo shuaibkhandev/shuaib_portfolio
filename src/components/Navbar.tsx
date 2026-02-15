@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { Menu, X, Sun, Moon, ChevronRight } from "lucide-react";
 import { useTheme } from "next-themes";
 
 const navLinks = [
@@ -38,10 +38,10 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
           <Link href="/" className="z-50 flex items-center">
-            <img src="/logo.png" alt="Shuaib Logo" className="w-32" />
+            <img src="/logo.png" alt="Shuaib Logo" className="w-24 md:w-32 object-contain" />
           </Link>
 
-          {/* Desktop */}
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <div className="flex items-center gap-6">
                 {navLinks.map((link) => (
@@ -64,11 +64,19 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Mobile Toggle */}
-          <div className="md:hidden z-50">
+          {/* Mobile Actions */}
+          <div className="flex items-center gap-2 md:hidden">
+            <button
+               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+               className="p-2 text-slate-500 dark:text-slate-400"
+               aria-label="Toggle Theme"
+            >
+                {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-slate-900 dark:text-white"
+              className="p-2 text-slate-900 dark:text-white z-50"
+              aria-label="Open Menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -80,31 +88,24 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-white dark:bg-slate-950 pt-24 px-6 md:hidden"
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-0 z-[45] bg-white dark:bg-slate-950 pt-24 px-6 md:hidden flex flex-col"
           >
-            <div className="flex flex-col space-y-6">
+            <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl font-medium text-slate-900 dark:text-white border-b border-slate-100 dark:border-slate-900 pb-4"
+                  className="text-3xl font-bold text-slate-900 dark:text-white py-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between group"
                 >
                   {link.name}
+                  <ChevronRight className="opacity-0 group-hover:opacity-100 transition-opacity" size={20} />
                 </Link>
               ))}
-               <button
-                  onClick={() => {
-                      setTheme(theme === "dark" ? "light" : "dark");
-                      setIsOpen(false);
-                  }}
-                  className="text-lg font-medium text-slate-600 dark:text-slate-400"
-               >
-                  Switch Appearance
-               </button>
             </div>
           </motion.div>
         )}
