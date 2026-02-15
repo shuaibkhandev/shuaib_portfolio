@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Shuaib Khan - Frontend Developer",
   description: "Portfolio of Shuaib Khan, a Results-driven Frontend & MERN Stack Developer.",
   icons: {
-    icon: '/favicon.png', // User provided favicon
+    icon: '/favicon.png',
   },
 };
 
