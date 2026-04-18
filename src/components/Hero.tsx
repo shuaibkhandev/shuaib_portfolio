@@ -46,7 +46,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          I am Shuaib Khan, a frontend architect focused on building accessible, pixel-perfect, and performant web applications using modern technologies.
+          I am Shuaib Khan, a Results-driven Frontend, MERN Stack & Web3 Developer focused on building scalable, user-focused, and robust web applications.
         </motion.p>
 
         <motion.div

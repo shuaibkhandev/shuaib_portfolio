@@ -15,21 +15,21 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Shuaib Khan | Frontend & MERN Stack Developer",
+    default: "Shuaib Khan | Web | MERN | Web3 Developer",
     template: "%s | Shuaib Khan"
   },
-  description: "Portfolio of Shuaib Khan, a Results-driven Frontend & MERN Stack Developer specializing in React.js, Next.js, and high-performance web applications.",
+  description: "Results-driven Frontend & MERN Stack Developer with 2.5+ years of experience building user-focused web applications. Skilled in React.js, Next.js, Node.js, and API integration.",
   keywords: [
     "Shuaib Khan",
-    "Frontend Developer",
+    "Web Developer",
     "MERN Stack Developer",
+    "Web3 Developer",
+    "Frontend Developer",
     "React Developer",
     "Next.js Developer",
-    "Web Developer Islamabad",
-    "JavaScript Developer",
-    "Full Stack Developer",
-    "Portfolio",
-    "UI/UX"
+    "Node.js Developer",
+    "Solidity",
+    "Portfolio"
   ],
   authors: [{ name: "Shuaib Khan" }],
   creator: "Shuaib Khan",
@@ -37,15 +37,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://shuaibkhan.dev", // Ideally update to actual URL
-    title: "Shuaib Khan - Frontend & MERN Stack Developer",
-    description: "Building exceptional digital experiences with modern web technologies.",
+    title: "Shuaib Khan - Web | MERN | Web3 Developer",
+    description: "Results-driven Frontend & MERN Stack Developer with 2.5+ years of experience building scalable, high-performance web applications.",
     siteName: "Shuaib Khan Portfolio",
+    images: [
+      {
+        url: "/shuaib.jpeg", // Note: For best results, use a 1200x630 image.
+        width: 800,
+        height: 800,
+        alt: "Shuaib Khan",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Shuaib Khan - Frontend Developer",
     description: "Results-driven Frontend & MERN Stack Developer specializing in React, Next.js, and Node.js.",
     creator: "@shuaibdev", // Update if different
+    images: ["/shuaib.jpeg"],
   },
   icons: {
     icon: '/favicon.png',

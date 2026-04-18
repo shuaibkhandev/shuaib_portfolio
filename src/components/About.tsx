@@ -84,10 +84,10 @@ export default function About() {
               viewport={{ once: true }}
             >
               <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-2">Shuaib Khan</h2>
-              <h3 className="text-xl text-brand-blue font-medium mb-6">Frontend | Web | MERN Developer</h3>
+              <h3 className="text-xl text-brand-blue font-medium mb-6">Web | MERN | Web3 Developer</h3>
               
               <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
-                Results-driven Frontend & MERN Stack Developer with 2+ years of experience building user-focused and responsive web applications. Skilled in React.js, Next.js, Node.js, and API integration. Strong focus on clean UI/UX, performance optimization, and scalable architecture.
+                Results-driven Frontend & MERN Stack Developer with 2.5+ years of experience building user-focused and responsive web applications. Skilled in React.js, Next.js, Node.js, and API integration. Strong focus on clean UI/UX, performance optimization, and scalable architecture.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

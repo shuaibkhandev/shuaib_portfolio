@@ -86,6 +86,16 @@ export default function Contact() {
                 </a>
 
                 <a
+                  href="tel:+923481921015"
+                  className="flex items-center gap-4 text-lg font-medium hover:text-brand-blue transition-colors group"
+                >
+                  <div className="w-12 h-12 bg-slate-200 dark:bg-slate-800 rounded-full flex items-center justify-center group-hover:bg-brand-blue/10 group-hover:text-brand-blue transition-colors">
+                    <span className="text-xl">📞</span>
+                  </div>
+                  +92 348 1921015
+                </a>
+                
+                <a
                   href="https://linkedin.com/in/shuaibdev"
                   target="_blank"
                   rel="noopener noreferrer"
