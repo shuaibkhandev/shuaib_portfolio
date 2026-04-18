@@ -31,7 +31,7 @@ export default function Skills() {
     },
     {
       title: "Web3 & Blockchain",
-      skills: ["Ethereum", "Web3.js", "Remix IDE", "MetaMask", "Smart Contracts (Testnets)"],
+      skills: ["Ethereum", "Web3.js", "Remix IDE", "MetaMask", "Truffle", "Smart Contracts (Testnets)"],
       icon: <Blocks className="w-6 h-6" />,
       color: "text-brand-blue",
     },
@@ -98,7 +98,7 @@ export default function Skills() {
           >
              <div className="inline-flex items-center gap-4 px-6 py-3 bg-white dark:bg-slate-900 rounded-full border border-slate-200 dark:border-slate-800 text-sm text-slate-600 dark:text-slate-400 shadow-sm">
                 <span className="font-bold text-slate-900 dark:text-white">Currently Learning:</span> 
-                <span>Python Development & problem-solving automation.</span>
+                <span>Web3 & Blockchain Development</span>
              </div>
           </motion.div>
       </div>
