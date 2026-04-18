@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 
 const projects = [
-  {
-    title: "Genihunt",
-    category: "SaaS / AI Services",
-    description: "An AI-powered intelligence platform for discovering high-potential B2B leads and analyzing market trends across Denmark's business landscape.",
-    tech: ["React.js", "Tailwind CSS", "AI Integration"],
-    links: { demo: "http://genihunt.com/", code: null },
-    image: null, 
+ {
+    title: "Baseer.ca",
+    category: "Corporate / Business Website",
+    description: "A modern corporate website built to showcase business services, strengthen online presence, and provide a professional digital identity with a clean and responsive user experience.",
+    tech: ["Next.js", "SCSS", "STRAPI", "RESTAPI"],
+    links: { demo: "https://www.baseer.ca/", code: null },
+    image: "https://app.baseer.ca/uploads/Ai_reports_f58c52f1d4.png?w=640&q=100",
   },
   {
     title: "FME Extensions",
@@ -18,16 +18,24 @@ const projects = [
     description: "A comprehensive e-commerce marketplace for Magento solutions, featuring hundreds of custom extensions and serving thousands of global merchants.",
     tech: ["Next.js", "Magento", "SCSS", "GraphQL API"],
     links: { demo: "https://www.fmeextensions.com/", code: null },
-    image: null,
+    image: "https://www.fmeextensions.com/images/webp/main_logo_header.webp",
   },
   {
     title: "BlackOaks Executive",
     category: "Luxury Transportation",
     description: "A premium chauffeur and airport car service platform offering seamless fleet selection, instant reservations, and VIP travel packages.",
     tech: ["Next.js", "SCSS", "Strapi"],
-    links: { demo: "https://blackoaks.usol360.com/", code: null },
-    image: null,
+    links: { demo: "https://www.blackoaksexecutive.com/", code: null },
+    image: "https://app.blackoaksexecutive.com/uploads/Luxury_Prom_Chauffeur_Services_571b7e619a.png",
   },
+  {
+  title: "SubQ Scientist",
+  category: "WordPress / E-Commerce / Web3 Payments",
+  description: "A WordPress-based e-commerce platform with integrated crypto payment gateway, enabling secure and decentralized payment processing for online transactions without traditional payment providers.",
+  tech: ["WordPress", "PHP", "Crypto Payments", "Web3 Integration"],
+  links: { demo: "https://subqscientist.com/", code: null },
+  image: "https://subqscientist.com/wp-content/uploads/2026/03/cropped-WhatsApp-Image-2026-03-19-at-10.46.35-PM-1.jpeg",
+}
 ];
 
 export default function Projects() {
