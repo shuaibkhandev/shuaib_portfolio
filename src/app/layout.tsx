@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: "Shuaib Khan | Web | MERN | Web3 Developer",
     template: "%s | Shuaib Khan"
   },
-  description: "Results-driven Frontend & MERN Stack Developer with 2.5+ years of experience building user-focused web applications. Skilled in React.js, Next.js, Node.js, and API integration.",
+  description: "Results-driven Frontend, MERN Stack & Web3 Developer with 2.5+ years of experience building user-focused web and decentralized applications. Skilled in React.js, Next.js, Node.js, Web3, and API integration.",
   keywords: [
     "Shuaib Khan",
     "Web Developer",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://shuaibkhan.dev", // Ideally update to actual URL
     title: "Shuaib Khan - Web | MERN | Web3 Developer",
-    description: "Results-driven Frontend & MERN Stack Developer with 2.5+ years of experience building scalable, high-performance web applications.",
+    description: "Results-driven Frontend, MERN Stack & Web3 Developer with 2.5+ years of experience building scalable, high-performance web and decentralized applications.",
     siteName: "Shuaib Khan Portfolio",
     images: [
       {
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shuaib Khan - Frontend Developer",
-    description: "Results-driven Frontend & MERN Stack Developer specializing in React, Next.js, and Node.js.",
+    title: "Shuaib Khan - Web | MERN | Web3 Developer",
+    description: "Results-driven Frontend, MERN Stack & Web3 Developer specializing in React, Next.js, Node.js, and Web3 technologies.",
     creator: "@shuaibdev", // Update if different
     images: ["/shuaib.jpeg"],
   },
@@ -90,7 +90,7 @@ export default function RootLayout({
                 "@type": "Person",
                 "name": "Shuaib Khan",
                 "url": "https://shuaibkhan.dev",
-                "jobTitle": "Frontend & MERN Stack Developer",
+                "jobTitle": "Frontend, MERN Stack & Web3 Developer",
                 "address": {
                   "@type": "PostalAddress",
                   "addressLocality": "Islamabad",
