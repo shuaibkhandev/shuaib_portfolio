@@ -80,3 +80,10 @@ console.log(name, email, message);
     );
   }
 }
+
+export async function GET() {
+  return NextResponse.json(
+    { message: 'Contact API is live and reachable!' },
+    { status: 200 }
+  );
+}
