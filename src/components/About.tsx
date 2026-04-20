@@ -8,7 +8,7 @@ const experience = [
     company: "United Sol",
     role: "Frontend Developer",
     period: "Dec 2024 – Present",
-    location: "Islamabad, Pakistan",
+    location: "Islamabad, Islamabad Capital Territory, Pakistan",
     description: "A leading web solutions provider specializing in high-quality eCommerce platforms.",
     responsibilities: [
       "Develop custom, responsive frontends for Magento, WordPress, PrestaShop, and Shopify.",
@@ -20,7 +20,7 @@ const experience = [
     company: "K2X Tech",
     role: "Frontend Developer",
     period: "Mar 2024 – Nov 2024",
-    location: "Peshawar, Pakistan",
+    location: "Peshawar, Khyber Pakhtunkhwa, Pakistan",
     description: "A technology firm specializing in end-to-end frontend development solutions.",
     responsibilities: [
       "Designed and developed responsive, dynamic user interfaces using React.js.",
@@ -32,7 +32,7 @@ const experience = [
     company: "Rozi Academy",
     role: "Web Developer",
     period: "Aug 2023 – Mar 2024",
-    location: "Rawalpindi, Pakistan",
+    location: "Rawalpindi, Punjab, Pakistan",
     description: "An educational and digital solutions platform supporting lead generation and online engagement.",
     responsibilities: [
       "Developed and maintained responsive websites and web applications.",
@@ -46,14 +46,14 @@ const education = [
   {
     institution: "UET Peshawar",
     degree: "BS, Computer Science",
-    period: "Nov 2019 – Aug 2023",
-    location: "Peshawar, Pakistan"
+    period: "Sep 2019 – Jul 2023",
+    location: "Peshawar, Khyber Pakhtunkhwa, Pakistan"
   },
   {
     institution: "Higher Secondary School",
     degree: "FSC, Engineering",
     period: "Jan 2017 – Feb 2019",
-    location: "Swat, Pakistan"
+    location: "Swat, Khyber Pakhtunkhwa, Pakistan"
   }
 ];
 
