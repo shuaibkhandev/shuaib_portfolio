@@ -32,7 +32,7 @@ console.log(name, email, message);
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
       html: `
         <div style="font-family: sans-serif; padding: 20px;">
-          <h2>New Contact Form Submission</h2>
+          <h2>New Contact Form Submission - WE LIVE SOFT</h2>
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Email:</strong> ${email}</p>
           <p><strong>Message:</strong></p>
