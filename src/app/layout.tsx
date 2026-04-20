@@ -40,13 +40,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://shuaibkhan.dev", // Ideally update to actual URL
+    url: "https://shuaibkhan.dev", 
     title: "Shuaib Khan - Web | MERN | Web3 Developer",
     description: "Results-driven Frontend, MERN Stack & Web3 Developer with 2.5+ years of experience building scalable, high-performance web and decentralized applications.",
     siteName: "Shuaib Khan Portfolio",
     images: [
       {
-        url: "/shuaib.jpeg", // Note: For best results, use a 1200x630 image.
+        url: "/shuaib.jpeg",
         width: 800,
         height: 800,
         alt: "Shuaib Khan",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shuaib Khan - Web | MERN | Web3 Developer",
     description: "Results-driven Frontend, MERN Stack & Web3 Developer specializing in React, Next.js, Node.js, and Web3 technologies.",
-    creator: "@shuaibdev", // Update if different
+    creator: "shuaib_dev",
     images: ["/shuaib.jpeg"],
   },
   icons: {
