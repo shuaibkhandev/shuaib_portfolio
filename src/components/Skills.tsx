@@ -7,7 +7,7 @@ export default function Skills() {
   const categories = [
     {
       title: "Programming Languages",
-      skills: ["JavaScript (ES6+)", "TypeScript", "Python (Basics)", "Solidity (Basics)"],
+      skills: ["JavaScript (ES6+)", "TypeScript", "Python", "Solidity"],
       icon: <Terminal className="w-6 h-6" />,
       color: "text-brand-blue",
     },
@@ -31,7 +31,7 @@ export default function Skills() {
     },
     {
       title: "Web3 & Blockchain",
-      skills: ["Ethereum", "Web3.js", "Remix IDE", "MetaMask", "Truffle", "Smart Contracts (Testnets)"],
+      skills: ["Ethereum", "Web3.js", "Remix IDE", "MetaMask", "Truffle", "Hardhat", "Smart Contracts"],
       icon: <Blocks className="w-6 h-6" />,
       color: "text-brand-blue",
     },
