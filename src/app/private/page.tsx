@@ -73,13 +73,11 @@ export default async function PrivatePage() {
           <div className="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800">
             <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
               <Globe className="w-5 h-5 text-brand-blue" />
-              Languages
+              Learning and Exploring Languages
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 "English",
-                "Urdu",
-                "Pashto"
               ].map((lang, index) => (
                 <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-blue/30 transition-colors shadow-sm">
                   <div className="w-8 h-8 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue font-bold text-sm shrink-0">
