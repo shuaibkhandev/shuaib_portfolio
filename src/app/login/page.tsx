@@ -6,7 +6,7 @@ import { Lock, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const initialState = {
+const initialState: { error: string | null } = {
   error: null,
 };
 

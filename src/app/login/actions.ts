@@ -3,7 +3,10 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
-export async function loginAction(prevState: any, formData: FormData) {
+export async function loginAction(
+  prevState: { error: string | null },
+  formData: FormData
+) {
   const password = formData.get("password");
   const correctPassword = process.env.PRIVATE_PAGE_PASSWORD;
 
