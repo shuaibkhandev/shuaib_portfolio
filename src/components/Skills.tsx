@@ -31,7 +31,7 @@ export default function Skills() {
     },
     {
       title: "Web3 & Blockchain",
-      skills: ["Ethereum", "Web3.js", "Remix IDE", "MetaMask", "Truffle", "Hardhat", "Smart Contracts"],
+      skills: ["Ethereum", "Web3.js", "Ethers.js", "Truffle", "Hardhat", "Remix IDE", "MetaMask", "Smart Contracts"],
       icon: <Blocks className="w-6 h-6" />,
       color: "text-brand-blue",
     },
