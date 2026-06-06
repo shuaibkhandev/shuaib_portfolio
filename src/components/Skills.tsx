@@ -25,7 +25,7 @@ export default function Skills() {
     },
     {
       title: "Databases",
-      skills: ["MongoDB", "MySQL", "Redis"],
+      skills: ["MongoDB", "MySQL", "Redis", "Prisma"],
       icon: <Database className="w-6 h-6" />,
       color: "text-brand-black dark:text-slate-400",
     },
@@ -37,7 +37,7 @@ export default function Skills() {
     },
     {
       title: "Tools & Platforms",
-      skills: ["Git/GitHub", "Bitbucket", "WordPress", "Magento", "Strapi", "GoHighLevel"],
+      skills: ["Git/GitHub", "Bitbucket", "Postman", "WordPress", "Magento", "Strapi", "GoHighLevel"],
       icon: <GitBranch className="w-6 h-6" />,
       color: "text-brand-red",
     },
