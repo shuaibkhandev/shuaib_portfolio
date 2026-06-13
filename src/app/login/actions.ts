@@ -8,7 +8,7 @@ export async function loginAction(
   formData: FormData
 ) {
   const password = formData.get("password");
-  const correctPassword = process.env.PRIVATE_PAGE_PASSWORD;
+  const correctPassword = process.env.PASSWORD;
 
   if (!correctPassword) {
     return { error: "Server configuration error: password not set." };
