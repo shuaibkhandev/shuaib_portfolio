@@ -2,6 +2,26 @@ import { LockOpen, LogOut, BookOpen, Globe } from "lucide-react";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { jsInterviewQuestions, reactInterviewQuestions, nextjsInterviewQuestions, nodeExpressInterviewQuestions, databaseInterviewQuestions, web3InterviewQuestions, pythonInterviewQuestions } from "@/lib/questions";
+
+export const metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
+const allQuestions = [
+  { title: "JavaScript", categories: jsInterviewQuestions },
+  { title: "React", categories: reactInterviewQuestions },
+  { title: "Next.js", categories: nextjsInterviewQuestions },
+  { title: "Node.js", categories: nodeExpressInterviewQuestions },
+  { title: "MySQL", categories: databaseInterviewQuestions.mysql },
+  { title: "MongoDB", categories: databaseInterviewQuestions.mongodb },
+  { title: "Web3", categories: web3InterviewQuestions },
+  { title: "Python", categories: pythonInterviewQuestions },
+];
+
 
 export default async function PrivatePage() {
 
@@ -17,7 +37,7 @@ export default async function PrivatePage() {
     <main className="min-h-screen bg-slate-50 dark:bg-slate-950 p-6 relative overflow-hidden flex flex-col items-center py-20">
 
       {/* Header section */}
-      <div className="w-full max-w-4xl flex justify-between items-center mb-12">
+      <div className="w-full max-w-[1600px] flex justify-between items-center mb-12">
         <Link href="/" className="text-sm text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors">
           &larr; Back to Portfolio
         </Link>
@@ -31,7 +51,7 @@ export default async function PrivatePage() {
         </form>
       </div>
 
-      <div className="w-full max-w-4xl bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-8 md:p-12">
+      <div className="w-full max-w-[1600px] bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-8 md:p-12">
 
         <div className="flex items-center gap-4 mb-8 pb-8 border-b border-slate-100 dark:border-slate-800">
           <div className="w-12 h-12 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center">
@@ -44,46 +64,32 @@ export default async function PrivatePage() {
         </div>
 
         <div className="space-y-6 text-slate-600 dark:text-slate-400">
-          <div className="mt-8">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
-              <BookOpen className="w-5 h-5 text-brand-blue" />
-              Learning and Exploring Tech Skills
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {[
-                "JavaScript",
-                "ReactJs",
-                "NodeJs",
-                "NextJs",
-                "Python",
-                "Web3.0 (Basic Projects)",
-                "MySql",
-                "Linux Command Line",
-              ].map((skill, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-blue/30 transition-colors shadow-sm">
-                  <div className="w-8 h-8 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue font-bold text-sm shrink-0">
-                    {index + 1}
-                  </div>
-                  <span className="font-medium text-slate-700 dark:text-slate-300">{skill}</span>
-                </div>
-              ))}
-            </div>
-          </div>
 
+          {/* Interview Questions Section */}
           <div className="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800">
-            <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
-              <Globe className="w-5 h-5 text-brand-blue" />
-              Learning and Exploring Languages
+            <h2 className="text-[28px] md:text-[42px] font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+              <BookOpen className="w-10 h-10 text-brand-blue" />
+              Interview Questions
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {[
-                "English",
-              ].map((lang, index) => (
-                <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-blue/30 transition-colors shadow-sm">
-                  <div className="w-8 h-8 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue font-bold text-sm shrink-0">
-                    {String.fromCharCode(65 + index)}
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-4">
+              {allQuestions.map((topic, idx) => (
+                <div key={idx} className="flex flex-col gap-4 p-6 bg-slate-50 dark:bg-slate-950 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                  <h3 className="text-[26px] md:text-[32] font-bold text-slate-900 dark:text-white border-b border-slate-200 dark:border-slate-800 pb-2">{topic.title}</h3>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
+                    {Object.entries(topic.categories).map(([level, questions]) => (
+                      questions.length > 0 && (
+                        <div key={level} className="flex flex-col gap-2">
+                          <h4 className="font-semibold text-[20px] md:text-[26px] text-brand-blue capitalize">{level}</h4>
+                          <ul className="list-disc list-inside text-[16px] md:text-[22px] text-slate-600 dark:text-slate-400 space-y-1">
+                            {questions.map((q, i) => (
+                              <li key={i}>{q}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )
+                    ))}
                   </div>
-                  <span className="font-medium text-slate-700 dark:text-slate-300">{lang}</span>
                 </div>
               ))}
             </div>
