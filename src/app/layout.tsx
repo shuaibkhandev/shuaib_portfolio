@@ -14,13 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-   metadataBase: new URL("https://www.welivesoft.com"),
+  metadataBase: new URL("https://www.welivesoft.com"),
   title: {
     default: "Shuaib Khan | Web | MERN | Web3 Developer",
     template: "%s | Shuaib Khan"
   },
   description: "Results-driven Frontend, MERN Stack & Web3 Developer with 2.5+ years of experience building user-focused web and decentralized applications. Skilled in React.js, Next.js, Node.js, Web3, and API integration.",
-   alternates: {
+  alternates: {
     canonical: "/",
   },
   keywords: [
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://shuaibkhan.dev", 
+    url: "https://shuaibkhan.dev",
     title: "Shuaib Khan - Web | MERN | Web3 Developer",
     description: "Results-driven Frontend, MERN Stack & Web3 Developer with 2.5+ years of experience building scalable, high-performance web and decentralized applications.",
     siteName: "Shuaib Khan Portfolio",

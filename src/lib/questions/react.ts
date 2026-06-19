@@ -168,6 +168,7 @@ export const reactInterviewQuestions = {
     "Custom Hooks",
     "React Router",
     "Code Splitting / Lazy Loading",
-    "Performance Optimization"
+    "Performance Optimization",
+    "https://jsdev.space/react-interview-questions-2026/?ref=dailydev"
   ],
 };
