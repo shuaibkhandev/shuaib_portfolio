@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Server, Database, Layers, GitBranch, Cpu, Terminal, Blocks, Globe } from "lucide-react";
+import { Code2, Server, Database, Layers, GitBranch, Cpu, Terminal, Blocks, Globe, BarChart } from "lucide-react";
 
 export default function Skills() {
   const categories = [
@@ -30,10 +30,22 @@ export default function Skills() {
       color: "text-brand-black dark:text-slate-400",
     },
     {
+      title: "AI Engineering",
+      skills: ["LLM Applications", "Prompt Engineering", "AI Agents", "RAG Pipelines", "OpenAI/Anthropic", "LangChain", "Vector DBs"],
+      icon: <Cpu className="w-6 h-6" />,
+      color: "text-brand-blue",
+    },
+    {
       title: "Web3 & Blockchain",
-      skills: ["Ethereum", "Web3.js", "Ethers.js", "Truffle", "Hardhat", "Remix IDE", "MetaMask", "Smart Contracts", "Smart Contract Deployment"],
+      skills: ["Solidity", "Ethereum", "Web3.js", "Ethers.js", "Truffle", "Hardhat", "Remix IDE", "MetaMask", "Smart Contracts"],
       icon: <Blocks className="w-6 h-6" />,
       color: "text-brand-blue",
+    },
+    {
+      title: "SEO & Performance",
+      skills: ["On-Page & Technical SEO", "Metadata Optimization", "Structured Data (JSON-LD)", "Core Web Vitals", "SSR/SSG/ISR"],
+      icon: <BarChart className="w-6 h-6" />,
+      color: "text-brand-yellow",
     },
     {
       title: "Tools & Platforms",

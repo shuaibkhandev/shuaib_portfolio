@@ -46,7 +46,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          I am Shuaib Khan, a Mid-Level Full Stack Developer with 3 years of experience building scalable web applications using React.js, Next.js, Node.js, and CMS platforms.
+          I am Shuaib Khan, a Full Stack Developer with 3+ years of experience building scalable web applications. Currently expanding into AI Engineering, building LLM-powered applications and AI agents, alongside hands-on experience in Web3 development.
         </motion.p>
 
         <motion.div
