@@ -110,7 +110,7 @@ export default function Skills() {
           >
              <div className="inline-flex items-center gap-4 px-6 py-3 bg-white dark:bg-slate-900 rounded-full border border-slate-200 dark:border-slate-800 text-sm text-slate-600 dark:text-slate-400 shadow-sm">
                 <span className="font-bold text-slate-900 dark:text-white">Currently Learning:</span> 
-                <span>Web3 & Blockchain Development</span>
+                <span>Generative AI</span>
              </div>
           </motion.div>
       </div>
