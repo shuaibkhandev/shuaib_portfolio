@@ -5,3 +5,5 @@ export { nodeExpressInterviewQuestions } from './nodejs';
 export { databaseInterviewQuestions } from './databases';
 export { web3InterviewQuestions } from './web3';
 export { pythonInterviewQuestions } from './python';
+export { typescriptInterviewQuestions } from './typescript';
+export { genAiInterviewQuestions } from './genai';

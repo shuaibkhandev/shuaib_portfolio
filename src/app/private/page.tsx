@@ -2,7 +2,7 @@ import { LockOpen, LogOut, BookOpen, Globe } from "lucide-react";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { jsInterviewQuestions, reactInterviewQuestions, nextjsInterviewQuestions, nodeExpressInterviewQuestions, databaseInterviewQuestions, web3InterviewQuestions, pythonInterviewQuestions } from "@/lib/questions";
+import { jsInterviewQuestions, reactInterviewQuestions, nextjsInterviewQuestions, nodeExpressInterviewQuestions, databaseInterviewQuestions, web3InterviewQuestions, pythonInterviewQuestions, typescriptInterviewQuestions, genAiInterviewQuestions } from "@/lib/questions";
 
 export const metadata = {
   robots: {
@@ -13,13 +13,15 @@ export const metadata = {
 
 const allQuestions = [
   { title: "JavaScript", categories: jsInterviewQuestions },
+  { title: "TypeScript", categories: typescriptInterviewQuestions },
   { title: "React", categories: reactInterviewQuestions },
   { title: "Next.js", categories: nextjsInterviewQuestions },
   { title: "Node.js", categories: nodeExpressInterviewQuestions },
-  { title: "MySQL", categories: databaseInterviewQuestions.mysql },
-  { title: "MongoDB", categories: databaseInterviewQuestions.mongodb },
-  { title: "Web3", categories: web3InterviewQuestions },
-  { title: "Python", categories: pythonInterviewQuestions },
+  // { title: "MySQL", categories: databaseInterviewQuestions.mysql },
+  // { title: "MongoDB", categories: databaseInterviewQuestions.mongodb },
+  // { title: "Web3", categories: web3InterviewQuestions },
+  // { title: "Python", categories: pythonInterviewQuestions },
+  { title: "GenAI", categories: genAiInterviewQuestions },
 ];
 
 
