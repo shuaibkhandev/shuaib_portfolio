@@ -7,15 +7,16 @@ const experience = [
   {
     company: "United Sol",
     role: "Full Stack Developer",
-    period: "Dec 2024 – Present",
+    period: "Dec 2024 – July 2026",
     location: "Islamabad, Pakistan",
     description: "A leading web solutions provider specializing in high-quality eCommerce platforms.",
     responsibilities: [
-      "Developed and maintained production web applications using React.js, Next.js, and TypeScript, improving load performance and code maintainability.",
-      "Built and customized CMS-driven systems on Strapi and Magento to support scalable content and e-commerce workflows.",
-      "Integrated REST APIs to connect frontend interfaces with backend services, ensuring reliable data flow across applications.",
-      "Customized WordPress themes and UI components to enhance user experience and site performance.",
-      "Collaborated cross-functionally to ship production-ready features on schedule."
+      "Developed and maintained production web applications using React.js, Next.js, TypeScript, and Node.js.",
+      "Built reusable UI components and responsive interfaces for scalable applications.",
+      "Integrated REST APIs and implemented reliable frontend-backend data flows.",
+      "Developed and customized CMS solutions using Strapi, Magento, and WordPress.",
+      "Improved application performance, maintainability, and user experience.",
+      "Collaborated with cross-functional teams to deliver production-ready features."
     ]
   },
   {
@@ -25,11 +26,10 @@ const experience = [
     location: "Peshawar, Pakistan",
     description: "A technology firm specializing in end-to-end frontend development solutions.",
     responsibilities: [
-      "Built responsive, reusable UI components in React.js, reducing development time on subsequent features.",
-      "Integrated REST APIs to power dynamic, real-time data rendering across client applications.",
-      "Refactored frontend architecture to improve code reusability and maintainability.",
-      "Partnered with backend teams to design and implement clean API integrations.",
-      "Ensured cross-device, cross-browser responsive design consistency."
+      "Developed responsive and reusable interfaces using React.js, JavaScript, HTML5, CSS3, Tailwind CSS, and Bootstrap.",
+      "Integrated REST APIs for dynamic data rendering.",
+      "Refactored frontend components to improve code reusability and maintainability.",
+      "Debugged UI issues and ensured responsive, cross-browser experiences."
     ]
   },
   {
@@ -39,9 +39,9 @@ const experience = [
     location: "Rawalpindi, Pakistan",
     description: "An educational and digital solutions platform supporting lead generation and online engagement.",
     responsibilities: [
-      "Developed internal dashboards and web applications to support business operations.",
-      "Customized GoHighLevel CRM to automate workflows and reduce manual processes.",
-      "Improved UI/UX across existing web platforms based on usability feedback.",
+      "Developed internal dashboards and web applications for business operations.",
+      "Customized GoHighLevel CRM workflows and interfaces.",
+      "Improved UI/UX based on user feedback and business requirements.",
       "Debugged frontend issues and optimized application performance."
     ]
   }
@@ -92,7 +92,7 @@ export default function About() {
               <h3 className="text-xl text-brand-blue font-medium mb-6">Full Stack Developer | AI Engineer | Web3 Developer</h3>
               
               <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
-                Full Stack Developer with 3+ years of experience designing and shipping scalable, SEO-optimized web applications using React.js, Next.js, Node.js, and CMS platforms. Skilled in frontend architecture, REST/GraphQL API integration, performance optimization, and technical SEO for production systems. Currently expanding into AI Engineering, building LLM-powered applications, AI agents, and RAG systems, alongside hands-on experience in Web3 development.
+                Full Stack Developer with 3+ years of experience building scalable web applications using React.js, Next.js, Node.js, TypeScript, and modern CMS platforms. Experienced in frontend architecture, REST/GraphQL API integration, responsive UI development, performance optimization, and production debugging. Currently expanding into AI Engineering, building LLM-powered applications, AI agents, and RAG systems using modern AI APIs and tools.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

@@ -13,13 +13,13 @@ export default function Skills() {
     },
     {
       title: "Frontend Development",
-      skills: ["React.js", "Next.js", "HTML5 & CSS3", "TailwindCSS", "Bootstrap", "Shadcn/ui", "SCSS"],
+      skills: ["React.js", "Next.js", "HTML5 & CSS3", "TailwindCSS", "Bootstrap", "Shadcn/ui", "SCSS", "Redux Toolkit", "Context API"],
       icon: <Code2 className="w-6 h-6" />,
       color: "text-brand-red",
     },
     {
       title: "Backend Development",
-      skills: ["Node.js", "Express.js", "REST API", "GraphQL API", "Webhook Integration"],
+      skills: ["Node.js", "Express.js", "REST API", "GraphQL API", "Webhook Integration", "WebSockets"],
       icon: <Server className="w-6 h-6" />,
       color: "text-brand-yellow",
     },
@@ -31,7 +31,7 @@ export default function Skills() {
     },
     {
       title: "AI Engineering",
-      skills: ["LLM Applications", "Prompt Engineering", "AI Agents", "RAG Pipelines", "OpenAI/Anthropic", "LangChain", "Vector DBs"],
+      skills: ["LLM Applications", "Prompt Engineering", "AI Agents", "Agentic Workflows", "RAG Pipelines", "OpenAI/Anthropic", "LangChain", "LangSmith", "Vector DBs", "Pinecone", "Chroma"],
       icon: <Cpu className="w-6 h-6" />,
       color: "text-brand-blue",
     },
@@ -43,13 +43,13 @@ export default function Skills() {
     },
     {
       title: "SEO & Performance",
-      skills: ["On-Page & Technical SEO", "Metadata Optimization", "Structured Data (JSON-LD)", "Core Web Vitals", "SSR/SSG/ISR"],
+      skills: ["On-Page & Technical SEO", "Metadata Optimization", "Structured Data (JSON-LD)", "Core Web Vitals", "SSR/SSG/ISR", "Sitemap & Robots.txt"],
       icon: <BarChart className="w-6 h-6" />,
       color: "text-brand-yellow",
     },
     {
       title: "Tools & Platforms",
-      skills: ["Git/GitHub", "Bitbucket", "Postman", "WordPress", "Magento", "Strapi", "GoHighLevel"],
+      skills: ["Git/GitHub", "GitLab", "Bitbucket", "Postman", "WordPress", "Magento", "Strapi", "GoHighLevel", "AWS", "Docker", "CI/CD"],
       icon: <GitBranch className="w-6 h-6" />,
       color: "text-brand-red",
     },
