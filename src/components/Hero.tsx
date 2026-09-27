@@ -131,6 +131,17 @@ export default function Hero() {
               alt="Portfolio card preview"
               className="w-full rounded-xl border border-slate-200 object-cover dark:border-slate-700"
             />
+
+            <div className="mt-3 flex justify-end">
+              <a
+                href="/Shuaibkhan_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100"
+              >
+                Open Resume
+              </a>
+            </div>
           </motion.div>
         </motion.div>
       )}
