@@ -115,7 +115,7 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.97, y: 12 }}
             transition={{ duration: 0.22, ease: "easeOut" }}
-            className="relative max-w-lg w-full rounded-2xl border border-slate-200 bg-white p-3 shadow-[0_30px_80px_rgba(15,23,42,0.28)] dark:border-slate-700 dark:bg-slate-900"
+            className="relative max-w-3xl w-full rounded-2xl border border-slate-200 bg-white p-3 shadow-[0_30px_80px_rgba(15,23,42,0.28)] dark:border-slate-700 dark:bg-slate-900"
           >
             <button
               type="button"
@@ -132,12 +132,19 @@ export default function Hero() {
               className="w-full rounded-xl border border-slate-200 object-cover dark:border-slate-700"
             />
 
-            <div className="mt-3 flex justify-end">
+            <div className="mt-3 flex justify-end gap-2">
+              <a
+                href="/portfolio_card.png"
+                download="Shuaib_Khan_Portfolio_Card.png"
+                className="inline-flex items-center gap-2 rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100"
+              >
+                Download Card
+              </a>
               <a
                 href="/Shuaibkhan_Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-md bg-slate-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-slate-800 dark:bg-white dark:text-slate-900 dark:hover:bg-slate-100"
+                className="inline-flex items-center gap-2 rounded-md border border-slate-200 px-4 py-2 text-sm font-medium text-slate-900 transition hover:bg-slate-50 dark:border-slate-700 dark:text-white dark:hover:bg-slate-800"
               >
                 Open Resume
               </a>
