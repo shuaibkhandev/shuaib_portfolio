@@ -1,22 +1,25 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Download, ExternalLink, FileText } from "lucide-react";
+import { ArrowRight, Download, X } from "lucide-react";
 
 export default function Hero() {
+  const [showCard, setShowCard] = useState(false);
+
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-white dark:bg-slate-950">
-      {/* Background Grid */}
-      <div className="absolute inset-0 bg-grid-pattern [mask-image:linear-gradient(to_bottom,white,transparent)] pointer-events-none" />
+    <>
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-white dark:bg-slate-950">
+        {/* Background Grid */}
+        <div className="absolute inset-0 bg-grid-pattern [mask-image:linear-gradient(to_bottom,white,transparent)] pointer-events-none" />
 
-      {/* Subtle ambient glow */}
-      <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[32rem] h-[32rem] rounded-full bg-brand-blue/4 dark:bg-brand-blue/8 blur-3xl pointer-events-none" />
-      <div className="absolute bottom-8 right-10 w-64 h-64 rounded-full bg-brand-red/4 dark:bg-brand-red/8 blur-3xl pointer-events-none" />
+        {/* Subtle ambient glow */}
+        <div className="absolute top-12 left-1/2 -translate-x-1/2 w-[32rem] h-[32rem] rounded-full bg-brand-blue/4 dark:bg-brand-blue/8 blur-3xl pointer-events-none" />
+        <div className="absolute bottom-8 right-10 w-64 h-64 rounded-full bg-brand-red/4 dark:bg-brand-red/8 blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
-        <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="text-center lg:text-left">
+        <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="max-w-3xl text-center lg:text-left">
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -65,14 +68,23 @@ export default function Hero() {
                 <span className="mr-2">View Work</span>
                 <ArrowRight className="transition-transform group-hover:translate-x-1" size={18} />
               </Link>
+
               <a
                 href="/Shuaibkhan_Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-12 items-center justify-center rounded-md border border-slate-200 bg-white/80 px-8 font-medium text-slate-900 shadow-sm transition-all duration-300 hover:border-slate-300 hover:bg-white dark:border-slate-700 dark:bg-slate-900/80 dark:text-white dark:hover:border-slate-600"
+                className="inline-flex h-12 items-center justify-center rounded-md border border-slate-200 bg-white/80 px-8 font-medium text-slate-900 shadow-sm transition-all duration-300 hover:border-slate-300 hover:bg-white hover:text-slate-900 dark:border-slate-700 dark:bg-slate-900/80 dark:text-white dark:hover:bg-white dark:hover:text-slate-900"
               >
                 <Download className="mr-2" size={18} /> Resume
               </a>
+
+              <button
+                type="button"
+                onClick={() => setShowCard(true)}
+                className="inline-flex h-12 items-center justify-center rounded-md border border-slate-200 bg-white/80 px-8 font-medium text-slate-900 shadow-sm transition-all duration-300 hover:border-slate-300 hover:bg-white dark:border-slate-700 dark:bg-slate-900/80 dark:text-white dark:hover:bg-white dark:hover:text-slate-900"
+              >
+                Portfolio Card
+              </button>
             </motion.div>
 
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-slate-600 dark:text-slate-300">
@@ -87,42 +99,29 @@ export default function Hero() {
               </div>
             </div>
           </div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.25 }}
-            className="flex justify-center lg:justify-end"
-          >
-            <div className="relative w-full max-w-md">
-              <div className="absolute -inset-1 rounded-[28px] bg-slate-200/70 dark:bg-slate-800/60 blur-xl" />
-              <div className="relative overflow-hidden rounded-[24px] border border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 p-3 shadow-[0_20px_50px_rgba(15,23,42,0.1)] dark:shadow-[0_20px_55px_rgba(2,6,23,0.35)]">
-                <img
-                  src="/portfolio_card.png"
-                  alt="Shuaib Khan resume card preview"
-                  className="w-full rounded-[18px] border border-slate-200 dark:border-slate-700 object-cover"
-                />
-
-                <div className="mt-4 flex items-center justify-between gap-3">
-                  <div className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-300">
-                    <FileText size={16} className="text-brand-blue" />
-                    Resume Preview
-                  </div>
-                  <a
-                    href="/Shuaibkhan_Resume.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-md bg-slate-900 dark:bg-white px-4 py-2 text-sm font-medium text-white dark:text-slate-900 transition hover:opacity-90"
-                  >
-                    Open
-                    <ExternalLink size={14} />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {showCard && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/70 px-4 backdrop-blur-sm">
+          <div className="relative max-w-lg w-full rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl dark:border-slate-700 dark:bg-slate-900">
+            <button
+              type="button"
+              onClick={() => setShowCard(false)}
+              className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-slate-100 text-slate-700 transition hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
+              aria-label="Close portfolio card"
+            >
+              <X size={18} />
+            </button>
+
+            <img
+              src="/portfolio_card.png"
+              alt="Portfolio card preview"
+              className="w-full rounded-xl border border-slate-200 object-cover dark:border-slate-700"
+            />
+          </div>
+        </div>
+      )}
+    </>
   );
 }
