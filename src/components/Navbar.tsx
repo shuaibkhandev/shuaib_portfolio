@@ -32,8 +32,8 @@ export default function Navbar() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled || isOpen
-            ? "bg-white/80 dark:bg-slate-950/80 backdrop-blur-md py-4 shadow-sm dark:shadow-none"
-            : "bg-transparent py-6"
+            ? "bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800/80 py-3 shadow-sm"
+            : "bg-transparent py-5"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
@@ -42,7 +42,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-6">
                 {navLinks.map((link) => (
                 <Link
@@ -54,13 +54,13 @@ export default function Navbar() {
                 </Link>
                 ))}
             </div>
-            <div className="h-4 w-[1px] bg-slate-200 dark:bg-slate-800" />
+            <div className="h-5 w-[1px] bg-slate-200 dark:bg-slate-700" />
             <button
                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-               className="p-2 text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors"
+               className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 transition hover:border-slate-300 hover:text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:text-white"
                aria-label="Toggle Theme"
             >
-                {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+                {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </button>
           </div>
 
@@ -68,17 +68,17 @@ export default function Navbar() {
           <div className="flex items-center gap-2 md:hidden">
             <button
                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-               className="p-2 text-slate-500 dark:text-slate-400"
+               className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300"
                aria-label="Toggle Theme"
             >
-                {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+                {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 text-slate-900 dark:text-white z-50"
+              className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-white z-50"
               aria-label="Open Menu"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>

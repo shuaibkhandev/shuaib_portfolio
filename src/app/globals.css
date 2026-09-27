@@ -2,17 +2,19 @@
 
 @variant dark (&:where(.dark, .dark *));
 
-
 :root {
-  /* Brand Colors - Welivesoft Logo Inspired */
-  --brand-red: #E63946;
-  --brand-blue: #457B9D;
-  --brand-yellow: #E9C46A;
-  --brand-black: #1D3557;
+  --brand-red: #d85760;
+  --brand-blue: #456f9a;
+  --brand-yellow: #cfa65a;
+  --brand-black: #1a2437;
 
-  /* Theme Colors */
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f4ef;
+  --foreground: #111827;
+  --muted: #5d6776;
+  --panel: rgba(255, 255, 255, 0.8);
+  --panel-strong: #ffffff;
+  --line: rgba(15, 23, 42, 0.08);
+  --shadow-soft: 0 22px 50px rgba(15, 23, 42, 0.08);
 }
 
 @theme {
@@ -23,30 +25,56 @@
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  scroll-behavior: smooth;
-}
-
-.bg-grid-pattern {
-  background-size: 40px 40px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-}
-
-.dark .bg-grid-pattern {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  --background: #0c1524;
+  --foreground: #ebf0f6;
+  --muted: #9ca8b8;
+  --panel: rgba(15, 23, 42, 0.8);
+  --panel-strong: #111827;
+  --line: rgba(148, 163, 184, 0.14);
+  --shadow-soft: 0 28px 60px rgba(2, 6, 23, 0.38);
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background:
+    radial-gradient(circle at top left, rgba(69, 111, 154, 0.05), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(216, 87, 96, 0.04), transparent 22%),
+    var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(61, 110, 163, 0.2);
+}
+
+.bg-grid-pattern {
+  background-size: 34px 34px;
+  background-image:
+    linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+}
+
+.dark .bg-grid-pattern {
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -58,19 +86,20 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 5px;
+  background: rgba(148, 163, 184, 0.9);
+  border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: rgba(100, 116, 139, 0.95);
 }
 
 @media (prefers-color-scheme: dark) {
   ::-webkit-scrollbar-thumb {
-    background: #334155;
+    background: rgba(71, 85, 105, 0.9);
   }
+
   ::-webkit-scrollbar-thumb:hover {
-    background: #475569;
+    background: rgba(100, 116, 139, 0.9);
   }
 }

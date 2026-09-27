@@ -88,11 +88,14 @@ export default function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
+              <div className="inline-flex items-center rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-slate-500 dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-300 mb-4">
+                Profile
+              </div>
               <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-2">Shuaib Khan</h2>
-              <h3 className="text-xl text-brand-blue font-medium mb-6">Full Stack Developer | AI Engineer | Web3 Developer</h3>
+              <h3 className="text-xl text-brand-blue font-medium mb-6">Full Stack Developer | AI Engineer | AI Automation</h3>
               
               <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-8">
-                Full Stack Developer with 3+ years of experience building scalable web applications using React.js, Next.js, Node.js, TypeScript, and modern CMS platforms. Experienced in frontend architecture, REST/GraphQL API integration, responsive UI development, performance optimization, and production debugging. Currently expanding into AI Engineering, building LLM-powered applications, AI agents, and RAG systems using modern AI APIs and tools.
+                Full Stack Developer and AI Engineer with 3+ years of professional experience building modern, scalable web applications. Strong expertise in React.js, Next.js, TypeScript, Node.js, Express.js, MongoDB, MySQL, REST APIs, and WebSockets. Experienced in front-end architecture, API integration, responsive UI development, performance optimization, and CMS platforms. Hands-on experience in AI Engineering, LLM applications, RAG, AI agents, and n8n automation, with additional experience in AWS, Docker, CI/CD, Web3, and cloud-based solutions.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
@@ -108,7 +111,9 @@ export default function About() {
 
                <a
                   href="/Shuaibkhan_Resume.pdf"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-lg font-medium hover:opacity-90 transition-opacity"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 rounded-xl font-medium shadow-[0_12px_30px_rgba(15,23,42,0.12)] transition hover:-translate-y-0.5 hover:opacity-95"
                 >
                   <Download size={18} /> Download Verified Resume
                 </a>
