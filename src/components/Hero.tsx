@@ -103,8 +103,20 @@ export default function Hero() {
       </section>
 
       {showCard && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/70 px-4 backdrop-blur-sm">
-          <div className="relative max-w-lg w-full rounded-2xl border border-slate-200 bg-white p-3 shadow-2xl dark:border-slate-700 dark:bg-slate-900">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/70 px-4 backdrop-blur-sm"
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96, y: 16 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.97, y: 12 }}
+            transition={{ duration: 0.22, ease: "easeOut" }}
+            className="relative max-w-lg w-full rounded-2xl border border-slate-200 bg-white p-3 shadow-[0_30px_80px_rgba(15,23,42,0.28)] dark:border-slate-700 dark:bg-slate-900"
+          >
             <button
               type="button"
               onClick={() => setShowCard(false)}
@@ -119,8 +131,8 @@ export default function Hero() {
               alt="Portfolio card preview"
               className="w-full rounded-xl border border-slate-200 object-cover dark:border-slate-700"
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
     </>
   );
